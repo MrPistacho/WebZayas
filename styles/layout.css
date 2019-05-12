@@ -10,18 +10,18 @@ body{margin:0;
 
 /*---------------------------------------------- Menú Hamburguesa-------------------------------------*/
 
-.page,
-.page__content {
+.Pag,
+.ContPag {
   position: relative;
 }
 
-.page {
+.Pag {
   min-height: 100vh;
   -webkit-perspective: 1500px;
           perspective: 1500px;
 }
 
-.page__content {
+.ContPag {
   min-height: 100vh;
 }
 
@@ -39,18 +39,18 @@ body{margin:0;
   z-index: 500;
 }
 
-.nav__list {
+.NavList {
   position: relative;
   padding: 0;
   margin: 45px 0 0 0;
   list-style-type: none;
 }
 
-.nav__item:not(:last-child) {
+.NavMenu:not(:last-child) {
   margin-bottom: 20px;
 }
 
-.nav__link {
+.NavEnlc {
   transition-property: all;
   transition-duration: 0.2s;
   transition-timing-function: linear;
@@ -60,12 +60,12 @@ body{margin:0;
   color: #fff;
   text-decoration: none;
 }
-.nav__link:hover {
+.NavEnlc:hover {
   color: #4caf50;
 }
 
 /* nav link icon styles */
-.nav__link-icon {
+.NavEnlc-icon {
   position: relative;
   top: -3px;
   margin-right: 10px;
@@ -88,7 +88,7 @@ body{margin:0;
   font-size:20px;
 }
 
-.nav__close {
+.NavCerr {
   position: absolute;
   top: 30px;
   right: 30px;
@@ -97,7 +97,7 @@ body{margin:0;
   cursor: pointer;
     
 }
-.nav__close:before, .nav__close:after {
+.NavCerr:before, .NavCerr:after {
   transition-property: all;
   transition-duration: 0.2s;
   transition-timing-function: linear;
@@ -111,26 +111,26 @@ body{margin:0;
           transform-origin: center center;
   background-color: #fff;
 }
-.nav__close:before {
+.NavCerr:before {
   position: absolute;
   top: 0;
   left: 18px;
   -webkit-transform: rotate(-45deg);
           transform: rotate(-45deg);
 }
-.nav__close:after {
+.NavCerr:after {
   position: absolute;
   top: 0;
   right: 18px;
   -webkit-transform: rotate(45deg);
           transform: rotate(45deg);
 }
-.nav__close:hover:before, .nav__close:hover:after {
+.NavCerr:hover:before, .NavCerr:hover:after {
   background-color: #4caf50;
 }
 
 /* nav open btn styles */
-.nav-open-btn {
+.NavAbi {
   position: absolute;
   top: 30px;
   left: 30px;
@@ -143,7 +143,7 @@ body{margin:0;
   overflow: hidden;
   cursor: pointer;
 }
-.nav-open-btn.js-hidden {
+.NavAbi.js-hidden {
   transition-property: all;
   transition-duration: 0s;
   transition-timing-function: linear;
@@ -152,29 +152,29 @@ body{margin:0;
   visibility: hidden;
 }
 
-.nav-open-btn__bar {
+.NavBar {
   width: 100%;
   height: 5px;
   background-color: #1c1c1c;
   border-radius: 20px;
 }
-.nav-open-btn__bar:nth-child(1) {
+.NavBar:nth-child(1) {
   position: absolute;
   top: 0;
   left: 0;
 }
-.nav-open-btn__bar:nth-child(2) {
+.NavBar:nth-child(2) {
   position: absolute;
   top: 10px;
   left: 0;
 }
-.nav-open-btn__bar:nth-child(3) {
+.NavBar:nth-child(3) {
   position: absolute;
   top: 20px;
   left: 0;
 }
 
-.nav--offcanvas-1 {
+.NavFuer-1 {
   transition-property: all;
   transition-duration: 0.2s;
   transition-timing-function: linear;
@@ -182,7 +182,7 @@ body{margin:0;
   left: -300px;
 }
 
-.nav--offcanvas-1.js-opened {
+.NavFuer-1.js-opened {
   transition-property: left;
   transition-duration: 0.2s;
   transition-timing-function: linear;
@@ -192,7 +192,7 @@ body{margin:0;
   visibility: visible;
 }
 
-.page__content--offcanvas-1 {
+.PagConFue-1 {
   transition-property: all;
   transition-duration: 0.2s;
   transition-timing-function: linear;
@@ -200,7 +200,7 @@ body{margin:0;
   left: 0;
 }
 
-.page__content--offcanvas-1.js-opened {
+.PagConFue-1.js-opened {
   transition-property: all;
   transition-duration: 0.3s;
   transition-timing-function: linear;
@@ -247,7 +247,7 @@ address, article, aside, figcaption, figure, footer, header, nav, section{displa
 
 /*----------------------------------------------General-------------------------------------*/
 
-#header, #container, #footer, #copyright{
+#header, #Contenido, #footer, #copyright{
     display:block; 
     width:960px; 
     margin:0 auto;}
@@ -260,19 +260,19 @@ h1, h2, h3, h4, h5, h6{
     font-style:italic; 
     line-height:normal;}
 
-.one_third, .two_third, .three_third{
+.Prime, .Secu, .Tecr{
     display:block; 
     float:left; 
     margin:0 30px 0 0;}
-.one_third{width:300px;}
-.two_third{width:630px;}
-.three_third{
+.Prime{width:300px;}
+.Secu{width:630px;}
+.Tecr{
     width:960px; 
     float:none;
     margin-right:0; 
     clear:both;}
 
-.lastbox{margin-right:0;}
+.Ulti{margin-right:0;}
 
 /*----------------------------------------------Header-------------------------------------*/
 .Slider{
@@ -284,20 +284,20 @@ h1, h2, h3, h4, h5, h6{
 
 /*----------------------------------------------Content Area-------------------------------------*/
 
-#container{padding:30px 0;}
-#container section{
+#Contenido{padding:30px 0;}
+#Contenido section{
     display:block; 
     width:100%; 
     margin:0 0 30px 0; 
     padding:0;}
 
-#container .last{margin:0;}
+#Contenido .last{margin:0;}
 
-#container .more{text-align:right;}
+#Contenido .more{text-align:right;}
 
 /* ------Main Content-----*/
 
-#container #homepage{
+#Contenido #IniPag{
     background-image: url(../images/ladrillo.jpg);
     display:block; 
     width:100%; 
@@ -306,40 +306,40 @@ h1, h2, h3, h4, h5, h6{
     padding: 25px;
     border-radius: 40px;}
 
-#container #homepage #services{}
+#Contenido #IniPag #services{}
 
-#container #homepage #services article{}
+#Contenido #IniPag #services article{}
 
-#container #homepage #services article figure{}
+#Contenido #IniPag #services article figure{}
 
-#container #homepage #services article figure img{
+#Contenido #IniPag #services article figure img{
     margin:0 0 15px 0; 
     padding:4px; 
     border:1px solid #D6D6D6;}
 
-#container #homepage #services article figure figcaption{}
+#Contenido #IniPag #services article figure figcaption{}
 
-#container #homepage #services article figure h2{
+#Contenido #IniPag #services article figure h2{
     font-size:14px; 
     font-weight:bold;}
 
-#container #homepage #services article figure footer{}
+#Contenido #IniPag #services article figure footer{}
 
-#container #homepage #intro{}
+#Contenido #IniPag #intro{}
 
-#container #homepage #intro article{}
+#Contenido #IniPag #intro article{}
 
-#container #homepage #intro article figure{}
+#Contenido #IniPag #intro article figure{}
 
 .QuiSom{
   width:700px;  
 }
-#container #homepage #intro article figure img{
+#Contenido #IniPag #intro article figure img{
     float:right; 
     margin:0 0px 10px 0px; 
     padding:4px;}
 
-#container #homepage #intro article figure figcaption{
+#Contenido #IniPag #intro article figure figcaption{
     float: left; 
     width:460px;}
 
@@ -444,9 +444,18 @@ figcaption #SeleIframe{
     
 }
 
-#container #homepage #intro article figure h2{}
+iframe.Form{
+    margin-left: 5px;
+    border:none;
+    border-radius: 20px;
+    height: 800px;
+    width: 950px;
+   
+}
 
-#container #homepage #intro article figure footer{}
+#Contenido #IniPag #intro article figure h2{}
+
+#Contenido #IniPag #intro article figure footer{}
 
 /*----------------------------------------------Copyright-------------------------------------*/
 

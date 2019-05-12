@@ -1,12 +1,12 @@
-//CODE TO USE ON YOUR WEBSITE - !!! YOU NEED IT
+
 
 //hide nav open btn when the nav is open, adding/removing open classes to nav and content
-var navOpenBtn = document.querySelector('.nav-open-btn');
-var navCloseBtn = document.querySelector('.nav__close');
+var navOpenBtn = document.querySelector('.NavAbi');
+var navCloseBtn = document.querySelector('.NavCerr');
 var nav = document.querySelector('.nav');
-var pageContent = document.querySelector('.page__content');
-var navList = document.querySelector('.nav__list');
-var page = document.querySelector('.page');
+var pageContent = document.querySelector('.ContPag');
+var navList = document.querySelector('.NavList');
+var page = document.querySelector('.Pag');
 
 //open nav
 navOpenBtn.addEventListener('click', function() {
@@ -44,8 +44,8 @@ page.addEventListener('click', function(e) {
 });
 
 //adding default demo classes
-nav.classList.add('nav--offcanvas-1');
-pageContent.classList.add('page__content--offcanvas-1');
+nav.classList.add('NavFuer-1');
+pageContent.classList.add('PagConFue-1');
 
 //change demo on btn click
 demoBtns.forEach(function(el, ind) {
@@ -74,11 +74,11 @@ demoBtns.forEach(function(el, ind) {
     
     nav.classList.remove(nav.classList[1]);
     
-    nav.classList.add('nav--offcanvas-' + effClass);
+    nav.classList.add('NavFuer-' + effClass);
     
     pageContent.classList.remove(pageContent.classList[1]);
     
-    pageContent.classList.add('page__content--offcanvas-' + effClass);
+    pageContent.classList.add('PagConFue-' + effClass);
     
   });
   

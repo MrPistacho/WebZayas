@@ -2,31 +2,30 @@
 <xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
 <xsl:template match="/">
   <html>
-  <style>
-  #contacto {
+   <style>
+  #reserva {
   font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
   border-collapse: collapse;
   width: 100%;
 }
 
-#contacto td, #customers th {
+#reserva td, #reserva th {
   border: 1px solid #ddd;
   padding: 8px;
 }
 
-#contacto tr:hover {background-color: white;}
+#reserva tr:hover {background-color: white;}
 
-#contacto th {
+#reserva th {
   padding-top: 12px;
   padding-bottom: 12px;
   text-align: center;
-  background-color: lightblue;
+  background-color: lightgreen;
   color: white;
-  
 }
 </style>
   <body>
- <table id="contacto">
+ <table id="reserva">
   <tr>
     <th>Nombre</th>
     <th>Apellido</th>
