@@ -12,7 +12,7 @@ Esta página contiene :
   
     - Un Slider con tres fotografías que gira automáticamente otenido de la página [ https://imageslidermaker.com/v2 ]
   
-    - Tres fotografías con animaciones al pasar el cursos por encima y con la posibilidad de acceder a la página correspondiente
+    - Tres fotografías con animaciones al pasar el cursor por encima y con la posibilidad de acceder a la página correspondiente
     
     - Una descripción con una fotografía del centro y un enlace hacia su página web
   
