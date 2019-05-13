@@ -34,7 +34,7 @@ Esta página contiene :
       
       - Personal [ Una foto con texto debajo ]
       
-      - Consultoría [ TExto con dos fotos con loat ]
+      - Consultoría [ Texto con dos fotos con float ]
       
       - Contáctanos / Reservas [ Dos Formularios hechos con el programa [ Formoid ] ]
       
